@@ -1,9 +1,15 @@
 function getCurrentPage(){
-	var path = window.location.pathname;
-	path = path.replace(/\/$/, "");
-	path = decodeURIComponent(path);
+	var url = window.location.href;
 
-	page = path.split('/').pop();
+	if(url == path.base){
+		page = 'dashboard';
+	}
+	else{
+		url = url.replace(/\/$/, "");
+		url = decodeURIComponent(url);
+
+		page = url.split('/').pop().replace(/[^a-zA-Z ]/g, '');
+	}
 
 	return  page;
 }

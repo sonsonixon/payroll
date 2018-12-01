@@ -52,6 +52,36 @@
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
+
+                    <div class="card">
+                        <div class="header">
+                            <h5 class="title">Add User</h5>
+                        </div>
+                        <div class="content">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Username</label>
+                                            <input type="text" class="form-control border-input" id="username" name="username" >
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Password</label>
+                                            <input type="text" class="form-control border-input" id="password" name="username" >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="form-group">
+                                        <button type="button" class="btn btn-block btn-fill btn-danger" id="btn-users_add">Submit</button>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </form>
+                        </div>
+                    </div>
                     
                 </div>
             </div>
@@ -73,12 +103,24 @@
     <!--  Notifications Plugin    -->
     <script src="assets/js/bootstrap-notify.js"></script>
 
-    <!-- Paper Dashboard Core javascript and methods for Demo purpose -->
+    <!-- Paper Dashboard Core javascript and methods -->
 	<script src="assets/js/paper-dashboard.js"></script>
+
+    <!-- TOASTR -->
+    <script src="assets/toastr/js/toastr.min.js"></script>
+
+    <!-- DATATABLES -->
+    <script src="assets/datatables/js/jquery.dataTables.js"></script>
+    <script src="assets/datatables/js/dataTables.bootstrap4.js"></script>
+
+    <!-- SWEETALERT -->
+    <script src="assets/sweetalert/js/sweetalert.js"></script>
 
     <!-- CUSTOM JS SCRIPT -->
     <script src="src/js/config.js"></script>
     <script src="src/js/functions.js"></script>
     <script src="src/js/main.js"></script>
+
+    <script src="src/js/custom/users.js"></script>
 
 </html>

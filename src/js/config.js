@@ -8,6 +8,8 @@ const path = {
 	},
 	script: {
 		sidebar: 	'src/js/custom/common/sidebar.js',
+		navbar: 	'src/js/custom/common/navbar.js',
+		users: 		'src/js/custom/users.js'
 	}
 }
 
@@ -21,8 +23,21 @@ const component = {
 		loader: 	'#loader'
 	},
 	href: {
-		dashboard: '#dashboard',
-		users: '#users'
+		brand: 		'#navbar-brand',
+		dashboard: 	'#dashboard',
+		users: 		'#users',
+		logout: 	'#logout'
+	},
+	input: {
+		users: {
+			username: '#username',
+			password: '#password'
+		}
+	},
+	button: {
+		users: {
+			add: '#btn-users_add'
+		}
 	}
 }
 

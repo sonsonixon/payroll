@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 	var page = getCurrentPage();
 
-	if(page == 'payroll'){
+	if(page === 'dashboard' || page === '#'){
 		$('a[href="' + path.base + '"]').parents('li').addClass('active');
 	}
 	else{
