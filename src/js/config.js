@@ -10,6 +10,11 @@ const path = {
 		sidebar: 	'src/js/custom/common/sidebar.js',
 		navbar: 	'src/js/custom/common/navbar.js',
 		users: 		'src/js/custom/users.js'
+	},
+	php: {
+		users: {
+			add: 	'src/php/users/add.php'
+		}
 	}
 }
 
@@ -36,12 +41,20 @@ const component = {
 	},
 	button: {
 		users: {
-			add: '#btn-users_add'
+			add: '#button_users_add'
+		}
+	},
+	formdata: {
+		users: {
+			add: '#formdata_users_add'
 		}
 	}
 }
 
 const message = {
-
+	users: {
+		success: 	'User has been successfully added',
+		error: 		'System has detected the following errors;'
+	}
 }
 

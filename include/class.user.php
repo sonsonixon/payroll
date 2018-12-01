@@ -128,5 +128,39 @@ class USER
 
 	}
 
+	public function addUser($uuid, $username, $password){
+
+		try
+		{
+			$hashed_password = password_hash($password, PASSWORD_DEFAULT);
+			
+			$stmt = $this->conn->prepare("INSERT INTO 
+											users (
+												uuid,
+												username,
+												password
+											)
+		                                VALUES (
+		                                		:uuid,
+		                                		:username,
+		                                		:password
+		                                	)");
+				
+			$stmt->bindparam(":uuid", 		$uuid);				  
+			$stmt->bindparam(":username", 	$username);
+			$stmt->bindparam(":password", 	$hashed_password);
+				
+			$stmt->execute();
+			
+			return $stmt;	
+		}
+		catch(PDOException $e)
+		{
+			echo $e->getMessage();
+		}	
+
+	}
+
+
 }
 ?>
